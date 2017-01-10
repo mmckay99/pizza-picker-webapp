@@ -1,0 +1,103 @@
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	background-color: rgb(240, 240, 240);
+}
+
+body>div {
+	display: inline-block;
+}
+
+#info {
+	height: 100%;
+	width: 30%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#logo-image {
+  cursor: pointer;
+  position : absolute;
+  z-index: 1000;
+  height : 100px;
+}
+.chipImage {
+  background-color: transparent;
+  background-image: url("images/thechip.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  height: 100px; 
+  /*-webkit-box-shadow: inset 0px -57px 75px -12px rgb(240, 240, 240);*/
+}
+#image{
+	background-image: url('images/segments/pizza.jpg'); 
+	height: 350px; 
+	opacity: 0.8; 
+	background-position: center;
+	background-size: cover;
+}
+
+#map-container {
+	height: 100%;
+	width: 30%;
+	position: absolute;
+	top: 0px;
+	left: 30%;
+}
+
+
+#map {
+	position: absolute;
+	left: 30%;
+	width: 70%;
+	height: 100%;
+	background-color: #CCC;
+}
+
+.container-fluid {
+	height:100%;
+	display: block;
+}
+
+#description-box {
+	padding-top: 10%;
+	padding-left: 1%;
+	padding-right: 1%;
+	text-align: center;
+	font-size: 14px;
+	color: #003366;
+	font-weight: bold;
+}
+
+#restaurant-name {
+
+	padding-top: 10%;
+	padding-left: 33%;
+	padding-right: 33%;
+	text-align: center;
+	font-size: 25px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#price {
+	padding-top: 10%;
+	padding-left: 33%;
+	padding-right: 33%;
+	text-align: center;
+}
+
+#stars {
+	padding-top: 10%;
+	padding-left: 33%;
+	padding-right: 33%;
+	text-align: center;
+}
+#tags {
+	padding-top: 10%;
+	padding-left: 33%;
+	padding-right: 33%;
+	text-align: center;
+}

@@ -1,0 +1,236 @@
+/*
+
+#logo-image {
+    margin: 5px;
+    height: 100%;
+}
+
+*/
+
+/* A slightly darker shade of white */
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+#nav-bar {
+    position: relative;
+    height: 50px;
+    background-color: #5A3F26; /*old: #55ACEE*/
+    width:100%;
+}
+
+#logo-image {
+  cursor: pointer;
+}
+
+.jumbotron {
+  background-color: transparent;
+  background-image: url("images/thechip.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  /*-webkit-box-shadow: inset 0px -57px 75px -12px rgb(240, 240, 240);*/
+}
+
+#postcode-container {
+  padding-top: 11px;
+  padding-bottom: 26px;
+}
+
+/*
+
+#postcode-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+*/
+.postcode {
+    margin-top: 25px;
+		width: 100%;
+    text-align: center;
+
+}
+
+#alert {
+    position: absolute;
+    top: 34px;
+    right: 27px;
+    color: red;
+    display: none;
+}
+
+.postcode input {
+  width: 100%;
+}
+
+/*making all direct children of the postcode div display block.*/
+.postcode>div,input {
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+/*
+#results-area {
+    height: 30%;
+    width: 400px;
+    min-width: 100%;
+    background-color: azure;
+}
+#results-row{
+    padding-right : 100px;
+    text-align: left;
+}
+
+#simpleTable thead th {
+    text-align: left;
+}
+
+#simpleTable tbody tr td {
+    text-align: left;
+}
+*/
+
+#pizza-chart { /*trying to make the pizza responsive*/
+	  align:center;
+  	width: 100%;
+  	height: 100%;
+}
+
+
+
+
+
+#pizza-chart-container {
+		text-align: center;
+		width:100%;
+		height:30%;
+}
+
+
+
+
+#distance-hint {
+    color: white;
+}
+
+button {
+		-webkit-appearance: none;
+		outline: none;
+		border: 0;
+		background: transparent;
+}
+
+
+/*
+#search {
+		width:30%;
+}
+
+#distance {
+	margin-left:5px;
+  	width:10%;
+}
+
+*/
+
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 0px;
+    list-style: outside none none;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+}
+
+/*
+#breadcrumbs-area {
+    margin: 10px;
+}
+
+#breadcrumbs-area ul li a {
+	display: block;
+	float: left;
+	height: 40px;
+	background: #3498db;
+	text-align: center;
+	padding: 10px 40px 0 40px;
+	position: relative;
+	margin: 0 10px 0 0;
+	text-decoration: none;
+	color: #fff;
+}
+
+#breadcrumbs-area ul li:first-child a {
+     I've made the first breadcrumb always be "PizzaPicker", maybe we
+        could colour it slightly differently?
+    background: #2d1db9;
+}
+
+ul{
+		list-style-type: none;
+}
+
+#breadcrumbs-area ul li a:after {
+		content: "";  border-top: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		border-left: 20px solid #3498db;
+		position: absolute; right: -20px; top: 0;
+}
+
+#breadcrumbs-area ul li a:before {
+		content: "";
+		border-top: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		border-left: 20px solid white;
+		position: absolute; left: 0; top: 0;
+}
+
+*/
+
+/* custom styling for the breadcrumb */
+
+#breadcrumbs-area {
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #E2E2E2;
+
+  display: inline-block;
+}
+
+#breadcrumbs-area > li + li:before {
+    color: #bbb;
+    content: "›"; /* alternately \25BA */
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+/* adding a glyphicon  */
+ol>li:first-child>a:first-child:before {
+  content: "\e021";
+  font-family: 'Glyphicons Halflings';
+  font-size: 13px;
+}
+
+#results-placeholder {
+  text-align: center;
+}
+
+#results-table {
+  background-color: white;
+}
+
+th:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+th.sorting-asc:after {
+    content: " ▲";
+    font-size: 11px;
+}
+
+th.sorting-desc:after {
+    content: " ▼";
+    font-size: 11px;
+}
